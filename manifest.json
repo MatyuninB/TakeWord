@@ -1,0 +1,19 @@
+{
+  "name": "Take Word!",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Take Word!"
+  },
+  "permissions": [
+    "notifications",
+    "storage", 
+    "activeTab", 
+    "scripting", 
+    "management"
+  ]
+}
