@@ -4,8 +4,8 @@ import { createPopUp } from './background/Pop-up/popUpCreate';
 
 chrome.runtime.onMessage.addListener(({ message }, sender, sendResponce) => {
   switch (message.type) {
-    case messageConst.popupOpened: 
-      WordParser.parseWord({delay: 0, notification: true});
+    case messageConst.popupOpened:
+      WordParser.parseWord({delay: 10000, notification: true});
       sendResponce();
       break;
     default:
@@ -15,6 +15,6 @@ chrome.runtime.onMessage.addListener(({ message }, sender, sendResponce) => {
 
 chrome.action.onClicked.addListener(
   () => {
-    createPopUp()
+    WordParser.parseWord({delay: 10000, notification: true});
   }
 )

@@ -117,10 +117,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\manifest.json$/,
-        loader: "file-loader"
-      },
-      {
         test: /\.s[ac]ss$/,
         use: [
           {

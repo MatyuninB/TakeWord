@@ -1,7 +1,7 @@
 {
-  "name": "webpacktestconfig",
+  "name": "take-word",
   "version": "1.0.0",
-  "description": "webpack test build",
+  "description": "take-word",
   "main": "index.js",
   "scripts": {
     "dev": "cross-env MODE=development webpack --mode development",
