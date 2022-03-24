@@ -18,8 +18,8 @@ const Popup = ({setLoading, token}) => {
     useLayoutEffect(async () => {
         setLoading(true)
         chrome.storage.sync.get([storeConst.lastWord], (storage) => {
-            setOriginWord(storage?.[storeConst.lastWord].word);
-            setTranslate(storage?.[storeConst.lastWord].translation)
+            storage?.[storeConst.lastWord]?.word ? setOriginWord(storage?.[storeConst.lastWord].word) : setOriginWord('Test word');
+            storage?.[storeConst.lastWord]?.word ? setTranslate(storage?.[storeConst.lastWord].translation) : setTranslate('Тестовое слово')
             setLoading(false)
           });
         
