@@ -1,6 +1,6 @@
-// const BACK_URL = 'https://take-word.herokuapp.com'
+const BACK_URL = 'https://take-word.herokuapp.com'
 
-const BACK_URL = 'http://localhost:8000'
+// const BACK_URL = 'http://localhost:8000'
 
 export const register = async ({login, password}) => {
   let result
