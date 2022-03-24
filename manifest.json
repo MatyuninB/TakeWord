@@ -7,13 +7,20 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "Take Word!"
+    "default_title": "Take Word!",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
   },
   "permissions": [
     "notifications",
     "storage", 
     "activeTab", 
     "scripting", 
-    "management"
+    "management",
+    "webRequest", 
+    "webNavigation"
   ]
 }

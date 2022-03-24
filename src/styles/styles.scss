@@ -1,15 +1,19 @@
 body {
   margin: 0;
+  overflow: hidden;
 }
 
 #root {
-  width: 400px;
-  height: 600px;
+  width: 240px;
+  height: 410px;
+  margin: 0;
   overflow: hidden;
 }
 
 .app {
-  background-color: yellow;
+  background-color: gold;
+  margin: 0;
+  overflow: hidden;
   min-height: 100%;
   width: 100%;
 }

@@ -6,11 +6,11 @@ export const createPopUp = async () => {
   let onScreen = false;
   const currTab = await chrome.windows.getCurrent();
   const tabs = await chrome.tabs.query({});
-  console.log(
-    onScreen,
-    tabs,
-    "ya"
-  );
+  // console.log(
+  //   onScreen,
+  //   tabs,
+  //   "ya"
+  // );
 
   (function (tabs) {
     const extention = tabs.find((e) => {
@@ -24,8 +24,8 @@ export const createPopUp = async () => {
   chrome.windows.create(
     {
       focused: true,
-      width: 400,
-      height: 600,
+      width: 240,
+      height: 430,
       type: "popup",
       url: "popup.html",
       top: currTab.top + 90,

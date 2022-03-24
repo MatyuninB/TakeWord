@@ -1,10 +1,15 @@
-import { parseWord } from "../api/wordAPI";
+import { parseWord, getRandomWord } from "../api/wordAPI";
 import { storeConst } from "../../constants/store_const";
 
 export class WordParserModel {
   getWord = async(fn = () => {}) => {
-    const word = await parseWord();
-    fn(word);
+
+    chrome.storage.local.get(['token_take_word'], async (res) => {
+      let word = await getRandomWord(res.token_take_word);
+      console.log(word)
+      fn(word)
+    })
+    
   }
 
   getLastWord = () => {

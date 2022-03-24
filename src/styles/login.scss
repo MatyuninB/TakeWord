@@ -1,0 +1,117 @@
+::placeholder { 
+    color: black;
+    opacity: 1;
+}
+
+.login_form {
+    height: 410px;
+}
+
+.login_title {
+    font-size: 46px;
+    font-family: monospace;
+    font-variant: petite-caps;
+    font-style: oblique;
+    font-weight: revert;
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 53px;
+    padding-top: 20px;
+}
+
+.login_warning {
+    height: 20px;
+    text-align: center;
+    margin: 5px;
+    color: red;
+}
+
+.login_link {
+    height: 14px;
+    cursor: pointer;
+    text-align: center;
+    margin: 90px auto 10px auto;
+}
+
+.login_link:hover {
+    text-decoration: underline;
+}
+
+.register_link {
+    height: 14px;
+    cursor: pointer;
+    text-align: center;
+    margin: 37px auto;
+}
+
+.register_link:hover {
+    text-decoration: underline;
+}
+.input_block {
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+}
+
+.login_form__input {
+    display: block;
+    background-color: gold;
+    height: 35px;
+    border: none; 
+}
+
+.error_warning {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.login_form__input:focus {
+    outline: none;
+}
+
+
+
+.login_send__button{
+    background-color: black;
+    color: gold;
+    margin: 37px auto 10px auto;
+    border-radius:0 0 10px 10px;
+    cursor: pointer;
+    width: 95%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    height: 50px;
+    justify-self: end;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register_send__button{
+    background-color: black;
+    color: gold;
+    margin: 0px auto 10px auto;
+    border-radius:0 0 10px 10px;
+    cursor: pointer;
+    width: 95%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    height: 50px;
+    justify-self: end;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye_img {
+    justify-self: flex-end;
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
