@@ -1,0 +1,49 @@
+.popup {
+    min-width: 240px;
+    min-height: 400px;
+    background-color: black;
+    align-items: center;
+    border: solid 5px gold;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.popup_logo {
+    font-size: 46px;
+    font-family: monospace;
+    font-variant: petite-caps;
+    font-style: oblique;
+    font-weight: revert;
+    color: gold;
+    height: 53px;
+    text-align: center;
+}
+.popup_words_block {
+    height: 290px;
+    width: 100%;
+}
+
+.popup_word {
+    width: 95%;
+    height: 50%;
+    margin: 5px auto;
+    font-size: 18px;
+    background-color: gold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.popup_button {
+    color: gold;
+    width: 100%;
+    background-color: black;
+    font-family: monospace;
+    font-variant: petite-caps;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
